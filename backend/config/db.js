@@ -1,7 +1,6 @@
-const os = require('os')
 const mongoose = require('mongoose')
 const mongourl = process.env['MONGO_URI']
-console.log(mongourl)
+
 const connectDB = async () => {
     try {
         const conn = await mongoose.connect(mongourl)
